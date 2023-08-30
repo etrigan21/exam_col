@@ -8,7 +8,6 @@ const user= require('../models/user.model');
 const passport = require('passport');
 const routes = require('../routes/index.routes');
 const app = express();
-app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(logger("combined"));
 app.use(session({
